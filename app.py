@@ -205,12 +205,10 @@ def make_download_image(img1: np.ndarray, img2: np.ndarray, img3: np.ndarray,
 def main():
     with st.sidebar:
         st.image(
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/"
-            "Fundus_photograph_of_normal_left_eye.jpg/480px-"
-            "Fundus_photograph_of_normal_left_eye.jpg",
+            "C:/workspace/dl_project/ex_image.png",
             caption="안저(Fundus) 이미지 예시",
+            width=160,
         )
-        st.markdown("---")
         st.markdown("### ⚙️ 설정")
         model_path_input = st.text_input("가중치 파일 경로", value=MODEL_PATH)
         bbox_threshold = st.slider(

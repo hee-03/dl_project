@@ -205,7 +205,7 @@ def make_download_image(img1: np.ndarray, img2: np.ndarray, img3: np.ndarray,
 def main():
     with st.sidebar:
         st.image(
-            "C:/workspace/dl_project/ex_image.png",
+            "ex_image.png",
             caption="안저(Fundus) 이미지 예시",
             width=160,
         )
